@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <h1>Simple, traffic-based pricing</h1>
+    <div style="margin-bottom: 0.5rem" class="inline-pc">Sign-up for our 30-day trial.</div>
+    <div class="inline-pc">No credit card required.</div>
+    <div id="main-container">
+      <div style="font-weight: 800" id="pageViews">100K PAGEVIEWS</div>
+      <input type="range"
+          name="slider"
+          min="1"
+          max="5"
+          value="3"
+          step="1"
+          id="slider"
+        />
+      <!-- <div id="sliderContainer">
+      </div> -->
+      <div>
+        <span id="cost">$16.00</span>
+        <span id="priceFreq">/month</span>
+      </div>
+      <div id="billing-container">
+        Monthly Billing
+        <div id="checkbox-container">
+          <input type="checkbox" id="check" />
+          <label for="check" id="toggle"></label>
+        </div>
+        Yearly Billing <span id="discount">- 25%</span>
+      </div>
+      <div id="line"></div>
+      <div id="perks-container">
+        <div id="above-border">
+          <img
+            src="images/icon-check.svg"
+            alt=""
+            style="margin-right: 1rem"
+          />Unlimited websites
+        </div>
+        <div>
+          <img
+            src="images/icon-check.svg"
+            alt=""
+            style="margin-right: 1rem"
+          />100% data ownership
+        </div>
+        <div>
+          <img
+            src="images/icon-check.svg"
+            alt=""
+            style="margin-right: 1rem"
+          />Email reports
+        </div>
+      </div>
+      <button id="button">Start my trial</button>
+    </div>
+  </body>
+</html>
